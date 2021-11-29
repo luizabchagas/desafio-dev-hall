@@ -14,78 +14,94 @@
     <title>Desafio Front-end Dev Hall</title>
   </head>
   <body>
-    <navbar>
-      <h1>MeuFreela</h1>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/luizabchagas/" target="_blank"
-          ><img src="./img/linkedin-1.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.instagram.com/luizabchagas/" target="_blank"
-          ><img src="./img/instagram-1.png" alt="Instagram"
-        /></a>
-        <a href="https://twitter.com/luizabchagas" target="_blank"
-          ><img src="./img/twitter-1.png" alt="Twitter"
-        /></a>
-      </div>
-    </navbar>
-    <div class="pc">
-      <div class="pc-text">
-        <p>Desenvolvedores prontos para ação</p>
-        <h1>Seu projeto pronto na velocidade da luz</h1>
-        <button class="btn-meeting-red" type="submit" value="meeting">
-          Peça uma reunião
-        </button>
-      </div>
-    </div>
-    <div class="thinking-man">
-      <p>
-        <span class="iniciativa">Nossa iniciativa</span>
-        <span class="dev"
-          >Somos desenvolvedores que se dedicam a fazer projetos perfeitos e
-          entregar valor para todos os seus clientes. Gostamos de ver clientes
-          satisfeitos com projetos feitos com carinho, atenção e qualidade
-          altíssima.</span
-        >
-      </p>
-      <img src="./img/pic-thinking-man-33567 1.png" alt="Thinking man" />
-    </div>
-    <div class="rectangle">
-      <img src="./img/rectangle-4.png" alt="Rectangle" />
-    </div>
-    <div class="form">
-      <h2>Mande um oi, ligamos para você!</h2>
-      <p>Preencha seus dados para que a gente possa entrar em contato.</p>
-      <div class="inputs">
-        <div class="label-name">
-          <label>Nome completo</label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Ex: Mateus Ávila Isidoro"
-            autocomplete="off"
-          />
+    <main>
+      <navbar>
+        <h1>MeuFreela</h1>
+        <div class="nav">
+          <button class="btn-mobile">
+            <img src="./img/list.svg" />
+          </button>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/luizabchagas/"
+                target="_blank"
+                ><img src="./img/linkedin-1.svg" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/luizabchagas/" target="_blank"
+                ><img src="./img/instagram-1.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/luizabchagas" target="_blank"
+                ><img src="./img/twitter-1.svg" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <div class="label-wpp">
-          <label>Whatsapp</label><br />
-          <input
-            type="tel"
-            id="whatsapp"
-            name="whatsapp"
-            placeholder="(99) 99999-9999"
-            autocomplete="off"
-          />
-        </div>
-        <div class="btn-green">
-          <button class="btn-meeting-green" type="submit" value="meeting">
+      </navbar>
+      <div class="pc">
+        <div class="pc-text">
+          <p>Desenvolvedores prontos para ação</p>
+          <h1>Seu projeto pronto na velocidade da luz</h1>
+          <button class="btn-meeting-red" type="submit" value="meeting">
             Peça uma reunião
           </button>
         </div>
       </div>
-    </div>
-    <footer>
-      Desafio 1 - front-end iniciante
-      <p>Iniciativa <strong>DEV HALL</strong></p>
-    </footer>
+      <div class="thinking-man">
+        <p>
+          <span class="iniciativa">Nossa iniciativa</span>
+          <span class="dev"
+            >Somos desenvolvedores que se dedicam a fazer projetos perfeitos e
+            entregar valor para todos os seus clientes. Gostamos de ver clientes
+            satisfeitos com projetos feitos com carinho, atenção e qualidade
+            altíssima.</span
+          >
+        </p>
+        <img src="./img/pic-thinking-man-33567.png" alt="Thinking man" />
+      </div>
+      <div class="rectangle">
+        <img src="./img/rectangle-4.png" alt="Rectangle" />
+      </div>
+      <div class="form">
+        <h2>Mande um oi, ligamos para você!</h2>
+        <p>Preencha seus dados para que a gente possa entrar em contato.</p>
+        <div class="inputs">
+          <div class="label-name">
+            <label>Nome completo</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex: Mateus Ávila Isidoro"
+              autocomplete="off"
+            />
+          </div>
+          <div class="label-wpp">
+            <label>Whatsapp</label><br />
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="(99) 99999-9999"
+              autocomplete="off"
+            />
+          </div>
+          <div class="btn-green">
+            <button class="btn-meeting-green" type="submit" value="meeting">
+              Peça uma reunião
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Desafio 1 - front-end iniciante
+        <p>Iniciativa <strong>DEV HALL</strong></p>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>

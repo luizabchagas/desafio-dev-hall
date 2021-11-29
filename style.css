@@ -13,6 +13,7 @@ body {
 
 navbar {
   background-image: linear-gradient(#ee5253, #d92223);
+  width: 100vw;
   height: 4.87rem;
   display: flex;
   justify-content: space-between;
@@ -34,16 +35,21 @@ a > img {
   height: 32px;
 }
 
+.btn-mobile {
+  display: none;
+}
+
 .icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style: none;
   gap: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.icons > a:hover {
+.icons > li > a:hover {
   color: #ee5253;
   top: -4px;
   filter: drop-shadow(0 2px 2px #5f0303);
@@ -65,13 +71,13 @@ a > img {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 91vh;
 }
 
 .pc-text {
   position: absolute;
   top: 18.25rem;
-  margin-left: 3.68rem;
+  margin-left: 59px;
 }
 
 .pc-text > p {
@@ -84,11 +90,12 @@ a > img {
   color: white;
   font-size: 80px;
   font-weight: 700;
-  width: 1000px;
+  width: 750px;
 }
 
 .btn-meeting-red {
   margin-top: 2.56rem;
+  margin-left: 0.8rem;
   color: white;
   font-size: 22px;
   font-weight: 400;
@@ -116,7 +123,6 @@ a > img {
   margin-top: 5.37rem;
   margin-left: 14.68rem;
   display: flex;
-  text-align: justify;
 }
 
 .thinking-man > p,
@@ -141,6 +147,7 @@ span {
   color: #333333;
   font-size: 22px;
   font-weight: 400;
+  width: 105%;
 }
 
 .rectangle {
@@ -241,13 +248,59 @@ input {
 }
 
 footer {
+  background-color: #eaeaea;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 6.93rem;
 }
 
 footer > p {
   margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pc {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .btn-mobile {
+    display: block;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav.active .icons {
+    display: flex;
+  }
 }
