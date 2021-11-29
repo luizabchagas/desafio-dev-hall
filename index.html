@@ -49,25 +49,43 @@
       </p>
       <img src="./img/pic-thinking-man-33567 1.png" alt="Thinking man" />
     </div>
+    <div class="rectangle">
+      <img src="./img/rectangle-4.png" alt="Rectangle" />
+    </div>
     <div class="form">
       <h2>Mande um oi, ligamos para você!</h2>
       <p>Preencha seus dados para que a gente possa entrar em contato.</p>
       <div class="inputs">
-      <form action="/action_page.php" method="get">
-        <div class="form-name">
-          <label>Nome completo</label>
-          <input type="text" id="name" name="name" placeholder="Ex: Mateus Ávila Isidoro" />
+        <div class="label-name">
+          <label>Nome completo</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ex: Mateus Ávila Isidoro"
+            autocomplete="off"
+          />
         </div>
-        <div class="form-wpp">
-          <label>Whatsapp</label>
-          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(99) 99999-9999" />
+        <div class="label-wpp">
+          <label>Whatsapp</label><br />
+          <input
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            placeholder="(99) 99999-9999"
+            autocomplete="off"
+          />
         </div>
-        <button class="btn-meeting-green" type="submit" value="meeting">
-          Peça uma reunião
-        </button>
+        <div class="btn-green">
+          <button class="btn-meeting-green" type="submit" value="meeting">
+            Peça uma reunião
+          </button>
+        </div>
       </div>
-      </form>
     </div>
-    <footer>Desafio 1 - front-end iniciante <p>Iniciativa <strong>DEV HALL</strong></p></footer>
+    <footer>
+      Desafio 1 - front-end iniciante
+      <p>Iniciativa <strong>DEV HALL</strong></p>
+    </footer>
   </body>
 </html>

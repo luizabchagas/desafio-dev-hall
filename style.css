@@ -6,6 +6,9 @@
 
 body {
   overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
 }
 
 navbar {
@@ -44,7 +47,7 @@ a > img {
   color: #ee5253;
   top: -4px;
   filter: drop-shadow(0 2px 2px #5f0303);
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease;
 }
 
 .icons:last-child {
@@ -60,6 +63,7 @@ a > img {
     url(./img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
@@ -122,6 +126,8 @@ span {
 
 .thinking-man > img {
   margin-right: 13.56rem;
+  margin-left: 4.75rem;
+  position: relative;
 }
 
 .iniciativa {
@@ -137,8 +143,19 @@ span {
   font-weight: 400;
 }
 
+.rectangle {
+  position: absolute;
+  margin-top: -110px;
+  z-index: 1;
+}
+
+.rectangle > img {
+  width: 100vw;
+  object-fit: cover;
+}
+
 .form {
-  margin-top: 15.62rem;
+  margin-top: 4.43rem;
   margin-left: 14.56rem;
 }
 
@@ -157,7 +174,38 @@ span {
 }
 
 .inputs {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: end;
+  justify-items: start;
+}
+
+.label-name {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  margin-right: 1.37rem;
+}
+
+.label-wpp {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  margin-right: 1.31rem;
+}
+
+.btn-green {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+  margin-right: 59.62rem;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  margin-top: 1px;
 }
 
 #name,
@@ -174,7 +222,7 @@ span {
   font-weight: 400;
   background-color: #10ac84;
   width: 304px;
-  height: 60px;
+  height: 62px;
   border-radius: 8px;
   border-style: none;
   transition: 0.2s ease;
