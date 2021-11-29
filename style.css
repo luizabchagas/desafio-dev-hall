@@ -128,7 +128,6 @@ a > img {
 .thinking-man > p,
 span {
   display: inline-block;
-  width: 90%;
 }
 
 .thinking-man > img {
@@ -148,6 +147,7 @@ span {
   color: #333333;
   font-size: 22px;
   font-weight: 400;
+  width: 10%;
 }
 
 .rectangle {
