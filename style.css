@@ -125,14 +125,9 @@ a > img {
   display: flex;
 }
 
-.thinking-man > p {
-  width: 95px;
-}
-
 .thinking-man > p,
 span {
   display: inline-block;
-  width: 105%;
 }
 
 .thinking-man > img {
