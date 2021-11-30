@@ -147,7 +147,7 @@ span {
 
 .rectangle {
   position: absolute;
-  margin-top: -110px;
+  margin-top: -6.87rem;
   z-index: 1;
 }
 
@@ -269,11 +269,7 @@ footer > p {
     flex-direction: column;
   }
 
-  .pc {
-    height: 100vh;
-  }
-  
-   .pc-text > p {
+  .pc-text > p {
     font-size: 25px;
   }
 
@@ -294,10 +290,6 @@ footer > p {
     width: 50px;
     height: 50px;
     margin-right: 1rem;
-  }
-
-  .btn-mobile {
-    display: block;
   }
 
   .hamburguer {
@@ -357,6 +349,67 @@ footer > p {
     bottom: 0px;
     transform: rotate(90deg);
   }
+
+  .thinking-man {
+    margin-left: 1rem;
+  }
+
+  .thinking-man > img {
+    margin-left: 10.5rem;
+    margin-top: -4rem;
+    width: 50%;
+    height: 50%;
+  }
+
+  .iniciativa {
+    font-size: 40px;
+    width: 200%;
+  }
+
+  .dev {
+    font-size: 20px;
+    width: 200%;
+  }
+
+  .rectangle {
+    margin-top: -110px;
+  }
+
+  .form {
+    margin-left: 1rem;
+  }
+
+  .form > h2 {
+    font-size: 40px;
+  }
+
+  .form > p {
+    font-size: 20px;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .label-name {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  .label-wpp {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .btn-green {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    font-size: 18px;
+    width: 270px;
+    height: 55px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -378,30 +431,5 @@ footer > p {
     font-size: 18px;
     width: 240px;
     height: 50px;
-  }
-
-  .inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100vw;
-  }
-
-  .label-name {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    margin-right: 1.37rem;
-  }
-
-  .label-wpp {
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-    margin-right: 1.31rem;
-  }
-
-  .btn-green {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-    margin-right: 59.62rem;
   }
 }
