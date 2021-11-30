@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -17,7 +17,9 @@ navbar {
   height: 4.87rem;
   display: flex;
   justify-content: space-between;
+  justify-items: center;
   align-items: center;
+  text-align: center;
   position: relative;
 }
 
@@ -35,18 +37,14 @@ a > img {
   height: 32px;
 }
 
-.btn-mobile {
-  display: none;
-}
-
 .icons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  justify-items: center;
   list-style: none;
   gap: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-right: 27px;
 }
 
 .icons > li > a:hover {
@@ -54,10 +52,6 @@ a > img {
   top: -4px;
   filter: drop-shadow(0 2px 2px #5f0303);
   transition: 0.2s ease;
-}
-
-.icons:last-child {
-  margin-right: 1.5rem;
 }
 
 .pc {
@@ -144,10 +138,11 @@ span {
 }
 
 .dev {
+  display: block;
   color: #333333;
   font-size: 22px;
   font-weight: 400;
-  width: 80%;
+  width: 105%;
 }
 
 .rectangle {
@@ -164,6 +159,7 @@ span {
 .form {
   margin-top: 4.43rem;
   margin-left: 14.56rem;
+  width: 100vw;
 }
 
 .form > h2 {
@@ -182,10 +178,11 @@ span {
 
 .inputs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 1fr;
   align-items: end;
   justify-items: start;
+  width: 100vw;
 }
 
 .label-name {
@@ -259,6 +256,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 6.93rem;
+  object-fit: cover;
 }
 
 footer > p {
@@ -266,41 +264,129 @@ footer > p {
 }
 
 @media (max-width: 800px) {
-  body {
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-  }
-
   main {
     display: flex;
     flex-direction: column;
   }
 
   .pc {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-      ),
-      url(./img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
     height: 100vh;
+  }
+
+  .menu-icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
   }
 
   .btn-mobile {
     display: block;
   }
 
+  .hamburguer {
+    display: block;
+    background-color: #000000;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    top: 24px;
+    left: 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .hamburguer:before,
+  .hamburguer:after {
+    display: block;
+    background-color: #000000;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .hamburguer:before {
+    top: -10px;
+  }
+
+  .hamburguer:after {
+    bottom: -10px;
+  }
+
   .icons {
     display: none;
   }
 
+  .nav.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .nav.active .icons {
     display: flex;
+  }
+
+  .nav.active .hamburguer {
+    transform: rotate(45deg);
+  }
+
+  .nav.active .hamburguer:before {
+    top: 0px;
+    transform: rotate(90deg);
+  }
+
+  .nav.active .hamburguer:after {
+    bottom: 0px;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 400px) {
+  a > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .pc-text > p {
+    font-size: 15px;
+  }
+
+  .pc-text > h1 {
+    font-size: 30px;
+    width: 280px;
+  }
+
+  .btn-meeting-red {
+    font-size: 18px;
+    width: 240px;
+    height: 50px;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+  }
+
+  .label-name {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    margin-right: 1.37rem;
+  }
+
+  .label-wpp {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    margin-right: 1.31rem;
+  }
+
+  .btn-green {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-right: 59.62rem;
   }
 }

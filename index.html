@@ -18,9 +18,9 @@
       <navbar>
         <h1>MeuFreela</h1>
         <div class="nav">
-          <button class="btn-mobile">
-            <img src="./img/list.svg" />
-          </button>
+          <div class="menu-icon">
+            <span class="hamburguer"></span>
+          </div>
           <ul class="icons">
             <li>
               <a
@@ -69,33 +69,35 @@
       <div class="form">
         <h2>Mande um oi, ligamos para você!</h2>
         <p>Preencha seus dados para que a gente possa entrar em contato.</p>
-        <div class="inputs">
-          <div class="label-name">
-            <label>Nome completo</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Ex: Mateus Ávila Isidoro"
-              autocomplete="off"
-            />
+        <form action="/action_page.php" method="get">
+          <div class="inputs">
+            <div class="label-name">
+              <label>Nome completo</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ex: Mateus Ávila Isidoro"
+                autocomplete="off"
+              />
+            </div>
+            <div class="label-wpp">
+              <label>Whatsapp</label><br />
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="(99) 99999-9999"
+                autocomplete="off"
+              />
+            </div>
+            <div class="btn-green">
+              <button class="btn-meeting-green" type="submit" value="meeting">
+                Peça uma reunião
+              </button>
+            </div>
           </div>
-          <div class="label-wpp">
-            <label>Whatsapp</label><br />
-            <input
-              type="tel"
-              id="whatsapp"
-              name="whatsapp"
-              placeholder="(99) 99999-9999"
-              autocomplete="off"
-            />
-          </div>
-          <div class="btn-green">
-            <button class="btn-meeting-green" type="submit" value="meeting">
-              Peça uma reunião
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
       <footer>
         Desafio 1 - front-end iniciante
