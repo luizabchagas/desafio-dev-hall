@@ -359,18 +359,18 @@ footer > p {
   .thinking-man > img {
     margin-left: 10.5rem;
     margin-top: 3rem;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
   }
 
   .iniciativa {
     font-size: 40px;
-    width: 100%;
+    width: 80%;
   }
 
   .dev {
     font-size: 20px;
-    width: 100%;
+    width: 80%;
   }
 
   .form {
