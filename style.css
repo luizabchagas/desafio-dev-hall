@@ -272,6 +272,21 @@ footer > p {
   .pc {
     height: 100vh;
   }
+  
+   .pc-text > p {
+    font-size: 25px;
+  }
+
+  .pc-text > h1 {
+    font-size: 65px;
+    width: 600px;
+  }
+
+  .btn-meeting-red {
+    font-size: 20px;
+    width: 270px;
+    height: 55px;
+  }
 
   .menu-icon {
     background-color: #ffffff;
