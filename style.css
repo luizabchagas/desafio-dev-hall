@@ -269,6 +269,10 @@ footer > p {
     display: flex;
     flex-direction: column;
   }
+  
+  .pc-text {
+    top: 15rem;
+  }
 
   .pc-text > p {
     font-size: 30px;
