@@ -388,6 +388,7 @@ footer > p {
     margin-left: 0;
     width: 80%;
     height: 80%;
+    position: relative;
   }
 
   .iniciativa {
@@ -397,6 +398,17 @@ footer > p {
   .dev {
     font-size: 20px;
     width: 90%;
+  }
+
+  .rectangle {
+    position: absolute;
+    margin-top: 90.6rem;
+    z-index: 1;
+  }
+
+  .rectangle > img {
+    width: 100%;
+    height: 90px;
   }
 
   .form {
