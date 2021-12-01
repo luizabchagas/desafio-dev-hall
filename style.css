@@ -116,8 +116,7 @@ a > img {
   display: flex;
 }
 
-.thinking-man > p,
-span {
+.thinking-man > span {
   display: inline-block;
 }
 
@@ -125,6 +124,11 @@ span {
   margin-right: 13.56rem;
   margin-left: 4.75rem;
   position: relative;
+}
+
+.thinking-man-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .iniciativa {
@@ -135,7 +139,6 @@ span {
 }
 
 .dev {
-  display: block;
   color: #333333;
   font-size: 22px;
   font-weight: 400;
@@ -267,7 +270,7 @@ footer > p {
   }
 
   .pc-text > p {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .pc-text > h1 {
@@ -351,43 +354,62 @@ footer > p {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .thinking-man-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
   }
 
   .thinking-man > img {
-    margin-left: 10.5rem;
     margin-top: 3rem;
+    margin-right: 0;
+    margin-left: 0;
     width: 80%;
     height: 80%;
   }
 
   .iniciativa {
     font-size: 40px;
-    width: 80%;
   }
 
   .dev {
     font-size: 20px;
-    width: 80%;
+    width: 90%;
   }
 
   .form {
-    margin-left: 1rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .form > h2 {
     font-size: 40px;
+    text-align: center;
   }
 
   .form > p {
     font-size: 20px;
+    text-align: center;
   }
 
   .inputs {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    margin-left: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
     gap: 1rem;
   }
 
@@ -402,6 +424,7 @@ footer > p {
   }
 
   .btn-green {
+    margin-left: 1.5rem;
     grid-column: 1 / 1;
     grid-row: 3 / 3;
     font-size: 18px;
@@ -416,13 +439,17 @@ footer > p {
     height: 25px;
   }
 
+  .pc-text {
+    margin-left: 20px;
+  }
+
   .pc-text > p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .pc-text > h1 {
-    font-size: 30px;
-    width: 280px;
+    font-size: 35px;
+    width: 330px;
   }
 
   .btn-meeting-red {
