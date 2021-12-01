@@ -210,6 +210,7 @@ label {
 
 input {
   margin-top: 1px;
+  padding: 5px;
 }
 
 #name,
@@ -434,6 +435,11 @@ footer > p {
 }
 
 @media (max-width: 400px) {
+  navbar > h1 {
+    margin-left: 1.2rem;
+    font-size: 25px;
+  }
+
   a > img {
     width: 25px;
     height: 25px;
@@ -456,5 +462,60 @@ footer > p {
     font-size: 18px;
     width: 240px;
     height: 50px;
+  }
+}
+
+@media (max-width: 330px) {
+  navbar > h1 {
+    margin-left: 1.2rem;
+    font-size: 20px;
+  }
+
+  a > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icons {
+    margin-right: 15px;
+  }
+
+  .pc-text {
+    margin-left: 15px;
+  }
+
+  .pc-text > p {
+    font-size: 15px;
+  }
+
+  .pc-text > h1 {
+    font-size: 28px;
+    width: 330px;
+  }
+
+  .btn-meeting-red {
+    font-size: 15px;
+    width: 200px;
+    height: 45px;
+  }
+
+  .iniciativa {
+    font-size: 35px;
+  }
+
+  .dev {
+    font-size: 18px;
+  }
+
+  .form > h2 {
+    font-size: 35px;
+  }
+
+  .form > p {
+    font-size: 18px;
+  }
+
+  .inputs {
+    margin-left: 0;
   }
 }
