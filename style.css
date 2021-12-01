@@ -111,22 +111,23 @@ a > img {
 }
 
 .thinking-man {
-  margin-top: 5.37rem;
-  margin-left: 14.68rem;
   display: flex;
 }
 
-.thinking-man > span {
-  display: inline-block;
-}
-
-.thinking-man > img {
+.thinking-man-img {
+  margin-top: 2.5625rem;
   margin-right: 13.56rem;
   margin-left: 4.75rem;
   position: relative;
 }
 
+.thinking-man-text > span {
+  display: inline-block;
+}
+
 .thinking-man-text {
+  margin-top: 5.37rem;
+  margin-left: 14.68rem;
   display: flex;
   flex-direction: column;
 }
@@ -142,7 +143,7 @@ a > img {
   color: #333333;
   font-size: 22px;
   font-weight: 400;
-  width: 105%;
+  width: 80%;
 }
 
 .rectangle {
