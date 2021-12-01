@@ -363,7 +363,7 @@ footer > p {
   }
 
   .thinking-man {
-    margin-left: 1rem;
+    margin-left: 0;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -402,7 +402,7 @@ footer > p {
 
   .rectangle {
     position: absolute;
-    margin-top: 90.6rem;
+    margin-top: 91.3rem;
     z-index: 1;
   }
 
