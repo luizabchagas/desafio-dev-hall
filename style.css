@@ -278,7 +278,7 @@ footer > p {
   }
 
   .pc-text {
-    top: 15rem;
+    top: 20rem;
   }
 
   .pc-text > p {
@@ -364,7 +364,6 @@ footer > p {
 
   .thinking-man {
     margin-left: 1rem;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -374,6 +373,8 @@ footer > p {
   }
 
   .thinking-man-text {
+    margin-top: 5.37rem;
+    margin-left: 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -381,7 +382,7 @@ footer > p {
     text-align: center;
   }
 
-  .thinking-man > img {
+  .thinking-man-img {
     margin-top: 3rem;
     margin-right: 0;
     margin-left: 0;
