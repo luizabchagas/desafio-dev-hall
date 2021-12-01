@@ -69,7 +69,7 @@
       <div class="form">
         <h2>Mande um oi, ligamos para você!</h2>
         <p>Preencha seus dados para que a gente possa entrar em contato.</p>
-        <form action="/action_page.php" method="get">
+        <form action="#" method="get">
           <div class="inputs">
             <div class="label-name">
               <label>Nome completo</label><br />
@@ -94,10 +94,16 @@
               />
             </div>
             <div class="btn-green">
-              <button class="btn-meeting-green" type="submit" value="meeting">
+              <button
+                class="btn-meeting-green"
+                type="submit"
+                value="meeting"
+                onclick="return validateName()"
+              >
                 Peça uma reunião
               </button>
             </div>
+            <span class="name-error" id="name-error"></span>
           </div>
         </form>
       </div>

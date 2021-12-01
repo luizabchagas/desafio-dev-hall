@@ -245,6 +245,12 @@ input {
   opacity: 0.5;
 }
 
+.name-error {
+  margin-top: 0.5rem;
+  color: #ff0505;
+  font-weight: 700;
+}
+
 footer {
   background-color: #eaeaea;
   color: #333333;
@@ -269,7 +275,7 @@ footer > p {
     display: flex;
     flex-direction: column;
   }
-  
+
   .pc-text {
     top: 15rem;
   }
