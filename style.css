@@ -438,7 +438,7 @@ footer > p {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   navbar > h1 {
     margin-left: 1.2rem;
     font-size: 25px;
