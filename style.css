@@ -81,7 +81,7 @@ a > img {
   color: white;
   font-size: 80px;
   font-weight: 700;
-  width: 750px;
+  width: 55%;
 }
 
 .btn-meeting-red {
@@ -216,8 +216,8 @@ input {
 
 #name,
 #whatsapp {
-  width: 338px;
-  height: 60px;
+  width: 21.125rem;
+  height: 3.75rem;
   border: solid 1px #cdcdcd;
   border-radius: 8px;
 }
@@ -227,8 +227,8 @@ input {
   font-size: 22px;
   font-weight: 400;
   background-color: #10ac84;
-  width: 304px;
-  height: 72px;
+  width: 19rem;
+  height: 4.5rem;
   border-radius: 8px;
   border-style: none;
   transition: 0.2s ease;
@@ -271,7 +271,7 @@ footer > p {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   main {
     display: flex;
     flex-direction: column;
@@ -287,7 +287,7 @@ footer > p {
 
   .pc-text > h1 {
     font-size: 65px;
-    width: 600px;
+    width: 85%;
   }
 
   .btn-meeting-red {
@@ -364,6 +364,7 @@ footer > p {
 
   .thinking-man {
     margin-left: 0;
+    margin-right: 0;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -373,8 +374,8 @@ footer > p {
   }
 
   .thinking-man-text {
-    margin-top: 5.37rem;
     margin-left: 0;
+    margin-right: 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -413,6 +414,7 @@ footer > p {
 
   .form {
     margin-left: 0;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -432,7 +434,8 @@ footer > p {
   }
 
   .inputs {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
+    width: 95vw;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
@@ -458,7 +461,7 @@ footer > p {
   }
 }
 
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
   navbar > h1 {
     margin-left: 1.2rem;
     font-size: 25px;
@@ -479,7 +482,7 @@ footer > p {
 
   .pc-text > h1 {
     font-size: 35px;
-    width: 330px;
+    width: 95%;
   }
 
   .btn-meeting-red {
@@ -489,7 +492,7 @@ footer > p {
   }
 }
 
-@media (max-width: 330px) {
+@media screen and (max-width: 330px) {
   navbar > h1 {
     margin-left: 1.2rem;
     font-size: 20px;
@@ -514,7 +517,7 @@ footer > p {
 
   .pc-text > h1 {
     font-size: 28px;
-    width: 330px;
+    width: 85%;
   }
 
   .btn-meeting-red {
