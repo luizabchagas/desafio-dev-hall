@@ -411,7 +411,7 @@ footer > p {
 
   .rectangle > img {
     width: 100vw;
-    height: 115px;
+    height: 130px;
     object-fit: cover;
   }
 
@@ -496,12 +496,12 @@ footer > p {
 
   .rectangle {
     left: 0;
-    top: 19rem;
+    top: 16rem;
   }
 
   .rectangle > img {
     width: 100vw;
-    height: 90px;
+    height: 110px;
     object-fit: cover;
   }
 }
