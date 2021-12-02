@@ -101,12 +101,14 @@ a > img {
 .btn-meeting-red:hover {
   cursor: pointer;
   background-color: #d92223;
+  border: 1px solid #000000;
   opacity: 0.8;
 }
 
 .btn-meeting-red:active {
   cursor: pointer;
   background-color: #d92223;
+  border: 1px solid #000000;
   opacity: 0.5;
 }
 
@@ -118,7 +120,6 @@ a > img {
   margin-top: 2.5625rem;
   margin-right: 13.56rem;
   margin-left: 4.75rem;
-  position: relative;
 }
 
 .thinking-man-text > span {
@@ -143,18 +144,19 @@ a > img {
   color: #333333;
   font-size: 22px;
   font-weight: 400;
-  width: 80%;
+  width: 105%;
+}
+
+.positioning {
+  position: relative;
+  width: 100vw;
 }
 
 .rectangle {
   position: absolute;
-  margin-top: -6.87rem;
+  left: -45rem;
+  top: 25rem;
   z-index: 1;
-}
-
-.rectangle > img {
-  width: 100vw;
-  object-fit: cover;
 }
 
 .form {
@@ -237,12 +239,14 @@ input {
 .btn-meeting-green:hover {
   cursor: pointer;
   background-color: #13725a;
+  border: 1px solid #000000;
   opacity: 0.8;
 }
 
 .btn-meeting-green:active {
   cursor: pointer;
   background-color: #13725a;
+  border: 1px solid #000000;
   opacity: 0.5;
 }
 
@@ -387,9 +391,8 @@ footer > p {
     margin-top: 3rem;
     margin-right: 0;
     margin-left: 0;
-    width: 80%;
-    height: 80%;
-    position: relative;
+    width: 60%;
+    height: 60%;
   }
 
   .iniciativa {
@@ -398,18 +401,18 @@ footer > p {
 
   .dev {
     font-size: 20px;
-    width: 90%;
+    width: 60%;
   }
 
   .rectangle {
-    position: absolute;
-    margin-top: 91.3rem;
-    z-index: 1;
+    left: 0;
+    top: 24rem;
   }
 
   .rectangle > img {
-    width: 100%;
-    height: 90px;
+    width: 100vw;
+    height: 115px;
+    object-fit: cover;
   }
 
   .form {
@@ -490,6 +493,17 @@ footer > p {
     width: 240px;
     height: 50px;
   }
+
+  .rectangle {
+    left: 0;
+    top: 19rem;
+  }
+
+  .rectangle > img {
+    width: 100vw;
+    height: 90px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -527,11 +541,25 @@ footer > p {
   }
 
   .iniciativa {
-    font-size: 35px;
+    font-size: 33px;
   }
 
   .dev {
     font-size: 18px;
+  }
+
+  .rectangle {
+    top: 13rem;
+  }
+
+  .rectangle > img {
+    width: 100vw;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  .form {
+    margin-left: 0;
   }
 
   .form > h2 {
@@ -543,6 +571,16 @@ footer > p {
   }
 
   .inputs {
-    margin-left: 0;
+    width: 100vw;
+  }
+
+  #name,
+  #whatsapp {
+    margin: 0;
+    width: 18rem;
+  }
+
+  .btn-meeting-green {
+    width: 16rem;
   }
 }
