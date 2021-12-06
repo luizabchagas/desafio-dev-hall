@@ -22,3 +22,19 @@ function validateName() {
 
   return true
 }
+
+/* OTIMIZAÇÃO COM AMP */
+
+const AmpOptimizer = require("@ampproject/toolbox-optimizer")
+
+const ampOptimizer = AmpOptimizer.create()
+
+const originalHtml = `
+<!doctype html>
+<html ⚡>
+  ...
+</html>`
+
+ampOptimizer.transformHtml(originalHtml).then(optimizedHtml => {
+  console.log(optimizedHtml)
+})
