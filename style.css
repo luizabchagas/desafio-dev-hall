@@ -154,7 +154,7 @@ a > img {
 
 .rectangle {
   position: absolute;
-  left: -45rem;
+  left: -35rem;
   top: 25rem;
   z-index: 1;
 }
