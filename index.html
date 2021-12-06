@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desafio Front-end Dev Hall</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <p>MeuFreela</p>
+          <div class="nav">
+            <div class="menu-icon">
+              <span class="hamburguer"></span>
+            </div>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/luizabchagas/"
+                  target="_blank"
+                  ><img src="./img/linkedin-1.svg" alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/luizabchagas/"
+                  target="_blank"
+                  ><img src="./img/instagram-1.svg" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/luizabchagas" target="_blank"
+                  ><img src="./img/twitter-1.svg" alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="pc">
+        <div class="pc-text">
+          <p>Desenvolvedores prontos para ação</p>
+          <h1>Seu projeto pronto na velocidade da luz</h1>
+          <button class="btn-meeting-red" type="submit" value="meeting">
+            Peça uma reunião
+          </button>
+        </div>
+      </div>
+      <div class="thinking-man">
+        <div class="thinking-man-text">
+          <span class="initiative"><p>Nossa iniciativa</p></span>
+          <span class="dev">
+            <p>
+              Somos desenvolvedores que se dedicam a fazer projetos perfeitos e
+              entregar valor para todos os seus clientes. Gostamos de ver
+              clientes satisfeitos com projetos feitos com carinho, atenção e
+              qualidade altíssima.
+            </p>
+          </span>
+        </div>
+        <div class="positioning">
+          <img
+            class="thinking-man-img"
+            src="./img/pic-thinking-man-33567.webp"
+            alt="Thinking man"
+            loading="lazy"
+          />
+          <div class="rectangle">
+            <img src="./img/rectangle-4.png" alt="Rectangle" loading="lazy" />
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <h2>Mande um oi, ligamos para você!</h2>
+        <p>Preencha seus dados para que a gente possa entrar em contato.</p>
+        <form action="#" method="post">
+          <div class="inputs">
+            <div class="label-name">
+              <label>Nome completo</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ex: Mateus Ávila Isidoro"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="label-wpp">
+              <label>Whatsapp</label><br />
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="(99) 99999-9999"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="btn-green">
+              <button
+                class="btn-meeting-green"
+                type="submit"
+                value="meeting"
+                onclick="return validateName()"
+              >
+                Peça uma reunião
+              </button>
+            </div>
+            <span class="name-error" id="name-error"></span>
+          </div>
+        </form>
+      </div>
+      <footer>
+        Desafio 1 - front-end iniciante
+        <p>Iniciativa <strong>DEV HALL</strong></p>
+      </footer>
+    </main>
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
