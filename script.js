@@ -7,6 +7,45 @@ menuIcon.addEventListener("click", function openMenu() {
   nav.classList.toggle("active")
 })
 
+/* ANIMAÇÃO MAQUINA ESCREVER*/
+
+function typeWriter(element) {
+  const arrayText = element.innerHTML.split("")
+  element.innerHTML = ""
+  arrayText.forEach(function (letter, i) {
+    setTimeout(function () {
+      element.innerHTML += letter
+    }, 60 * i)
+  })
+}
+
+const initialDev = document.querySelector(".pc-text > p")
+window.addEventListener("load", typeWriter(initialDev))
+
+/*const initialProject = document.querySelector(".pc-text > h1")
+window.addEventListener("load", typeWriter(initialProject))*/
+
+/* ANIMAÇÃO INICIAL */
+
+window.addEventListener("load", function () {
+  const animated = document.querySelectorAll("[animationLoad]")
+  animated.forEach(function (element) {
+    element.classList.add("on")
+  })
+})
+
+/* ANIMAÇÃO COM SCROLL */
+
+window.addEventListener("scroll", function () {
+  const animated = document.querySelectorAll("[animation]")
+  const windowTop = window.pageYOffset + 500
+  animated.forEach(function (element) {
+    if (windowTop > element.offsetTop) {
+      element.classList.add("on")
+    }
+  })
+})
+
 /* VALIDAÇÃO DO CAMPO NOME */
 
 function validateName() {
@@ -18,9 +57,9 @@ function validateName() {
   if (name.length < 2) {
     error.innerHTML = "* O nome deve ter no mínimo 2 caracteres"
     return false
+  } else {
+    return true
   }
-
-  return true
 }
 
 /* SCROLL BOTÃO DOBRA*/

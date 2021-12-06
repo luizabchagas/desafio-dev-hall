@@ -275,6 +275,42 @@ footer > p {
   margin-top: 0.5rem;
 }
 
+[animation] {
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
+[animation="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[animation="right"] {
+  transform: translate3d(200px, 0, 0);
+}
+
+[animation="bottom"] {
+  transform: translate3d(0, 0, 200px);
+}
+
+[animation].on {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[animationLoad] {
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
+[animationLoad="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[animationLoad].on {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @media screen and (max-width: 800px) {
   main {
     display: flex;
