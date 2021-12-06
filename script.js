@@ -52,7 +52,9 @@ window.addEventListener("load", function () {
   const animated = document.querySelectorAll("[animationMobile]")
   animated.forEach(function (element) {
     element.classList.add("on")
-    const desktopAnimation = element.classList.contains("[animation]")
+    const desktopAnimation = element.classList.contains(
+      "[animation]" && "[animationMobile]"
+    )
     if (desktopAnimation == true) {
       element.classList.remove("[animation]")
     }
