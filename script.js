@@ -50,9 +50,9 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("load", function () {
   const animated = document.querySelectorAll("[animationMobile]")
-  const desktopAnimation = element.classList.contains("[animation]")
   animated.forEach(function (element) {
     element.classList.add("on")
+    const desktopAnimation = element.classList.contains("[animation]")
     if (desktopAnimation == true) {
       element.classList.remove("[animation]")
     }
