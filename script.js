@@ -23,18 +23,17 @@ function validateName() {
   return true
 }
 
-/* OTIMIZAÇÃO COM AMP */
+/* SCROLL BOTÃO DOBRA*/
 
-const AmpOptimizer = require("@ampproject/toolbox-optimizer")
+btnRed = document.getElementsByClassName(".btn-meeting-red")
 
-const ampOptimizer = AmpOptimizer.create()
-
-const originalHtml = `
-<!doctype html>
-<html lang="pt-br">
-  ...
-</html>`
-
-ampOptimizer.transformHtml(originalHtml).then(optimizedHtml => {
-  console.log(optimizedHtml)
+$(document).on("click", btnRed, function (e) {
+  btnGreen = document.getElementsByTagName("input")
+  e.preventDefault()
+  $("html, body").animate(
+    {
+      scrollTop: $(btnGreen).offset().top
+    },
+    1000
+  )
 })

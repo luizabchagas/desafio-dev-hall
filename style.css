@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-navbar {
+nav {
   background-image: linear-gradient(#ee5253, #d92223);
   width: 100vw;
   height: 4.87rem;
@@ -23,7 +23,7 @@ navbar {
   position: relative;
 }
 
-navbar > h1 {
+nav > h1 {
   color: white;
   font-size: 30px;
   font-weight: 700;
@@ -62,7 +62,7 @@ a > img {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 91vh;
+  height: calc(100vh - 70px);
 }
 
 .pc-text {
