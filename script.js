@@ -31,7 +31,7 @@ const ampOptimizer = AmpOptimizer.create()
 
 const originalHtml = `
 <!doctype html>
-<html ⚡>
+<html lang="pt-br">
   ...
 </html>`
 
