@@ -25,9 +25,7 @@ function validateName() {
 
 /* SCROLL BOTÃO DOBRA*/
 
-btnRed = document.getElementsByClassName(".btn-meeting-red")
-
-$(document).on("click", btnRed, function (e) {
+$(document).on("click", ".btn-meeting-red", function (e) {
   btnGreen = document.getElementsByTagName("input")
   e.preventDefault()
   $("html, body").animate(
