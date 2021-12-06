@@ -46,6 +46,19 @@ window.addEventListener("scroll", function () {
   })
 })
 
+/* ANIMAÇÃO MOBILE */
+
+window.addEventListener("load", function () {
+  const animated = document.querySelectorAll("[animationMobile]")
+  const desktopAnimation = element.classList.contains("[animation]")
+  animated.forEach(function (element) {
+    element.classList.add("on")
+    if (desktopAnimation == true) {
+      element.classList.remove("[animation]")
+    }
+  })
+})
+
 /* VALIDAÇÃO DO CAMPO NOME */
 
 function validateName() {

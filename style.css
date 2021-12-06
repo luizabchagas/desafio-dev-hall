@@ -540,6 +540,20 @@ footer > p {
     height: 110px;
     object-fit: cover;
   }
+
+  [animationMobile] {
+    opacity: 0;
+    transition: 1.5s ease;
+  }
+
+  [animationMobile="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  [animationMobile].on {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media screen and (max-width: 330px) {
