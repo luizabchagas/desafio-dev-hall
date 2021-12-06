@@ -57,7 +57,7 @@ a > img {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url(./img/background.png);
+    url(./img/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -133,7 +133,7 @@ a > img {
   flex-direction: column;
 }
 
-.iniciativa {
+.initiative {
   color: #333333;
   font-size: 50px;
   font-weight: 700;
