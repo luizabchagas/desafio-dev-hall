@@ -160,12 +160,6 @@ a > img {
   z-index: 1;
 }
 
-.rectangle > img {
-  width: 200vw;
-  height: 120px;
-  object-fit: cover;
-}
-
 .form {
   margin-top: 4.43rem;
   margin-left: 14.56rem;
@@ -334,14 +328,6 @@ footer > p {
 
   .thinking-man-text {
     margin-left: 10rem;
-  }
-
-  .initiative {
-    width: 120%;
-  }
-
-  .dev {
-    width: 120%;
   }
 
   .rectangle {
@@ -612,6 +598,10 @@ footer > p {
     left: 0;
     top: 15rem;
   }
+
+  .initiative {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -662,6 +652,10 @@ footer > p {
     height: 110px;
     object-fit: cover;
   }
+
+  .initiative {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 330px) {
@@ -698,7 +692,7 @@ footer > p {
     height: 45px;
   }
 
-  .iniciativa {
+  .initiative {
     font-size: 30px;
   }
 
@@ -729,7 +723,7 @@ footer > p {
   }
 
   .inputs {
-    width: 100vw;
+    width: 90vw;
   }
 
   #name,
