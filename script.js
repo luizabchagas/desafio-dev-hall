@@ -5,6 +5,8 @@ const menuIcon = document.querySelector(".menu-icon")
 menuIcon.addEventListener("click", function openMenu() {
   const nav = document.querySelector(".nav")
   nav.classList.toggle("active")
+  const menu = document.querySelector(".menu-icon")
+  menu.classList.toggle("active")
 })
 
 /* ANIMAÇÃO MAQUINA ESCREVER*/
@@ -46,20 +48,18 @@ window.addEventListener("scroll", function () {
   })
 })
 
-/* ANIMAÇÃO MOBILE */
+/* ANIMAÇÃO MOBILE 
 
 window.addEventListener("load", function () {
   const animated = document.querySelectorAll("[animationMobile]")
   animated.forEach(function (element) {
     element.classList.add("active")
-    const desktopAnimation = element.classList.contains(
-      "[animation]" && "[animationMobile].active"
-    )
+    const desktopAnimation = element.classList.contains(".on" && ".active")
     if (desktopAnimation == true) {
       element.classList.remove("[animation]")
     }
   })
-})
+})*/
 
 /* VALIDAÇÃO DO CAMPO NOME */
 

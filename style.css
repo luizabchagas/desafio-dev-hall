@@ -145,6 +145,7 @@ a > img {
   font-size: 22px;
   font-weight: 400;
   width: 105%;
+  line-height: 1.5;
 }
 
 .positioning {
@@ -311,12 +312,129 @@ footer > p {
   transform: translate3d(0, 0, 0);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   main {
     display: flex;
     flex-direction: column;
   }
 
+  .pc-text {
+    top: 25rem;
+  }
+
+  .pc-text > h1 {
+    font-size: calc(4.375rem + ((1vw - 8px) * 0.8929));
+    width: 70%;
+  }
+
+  .thinking-man {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .thinking-man-text {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .thinking-man-img {
+    margin-top: 3rem;
+    margin-right: 0;
+    margin-left: 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .dev {
+    width: 70%;
+  }
+
+  .rectangle {
+    left: 0;
+    top: 32rem;
+  }
+
+  .rectangle > img {
+    width: 100vw;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form > h2 {
+    text-align: center;
+  }
+
+  .form > p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .inputs {
+    margin-left: 14rem;
+    width: 95vw;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+  }
+
+  .label-name {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  .label-wpp {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .btn-green {
+    margin-left: 1.5rem;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    font-size: 18px;
+    width: 270px;
+    height: 55px;
+  }
+
+  [animation] {
+    opacity: 0;
+    transition: 2s ease-in-out;
+  }
+
+  [animation="left"] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  [animation="right"] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  [animation="bottom"] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  [animation].on {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .pc-text {
     top: 20rem;
   }
@@ -341,7 +459,7 @@ footer > p {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin-right: 1rem;
+    margin-right: 1.27rem;
   }
 
   .hamburguer {
@@ -380,12 +498,21 @@ footer > p {
 
   .nav.active {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+
+  .menu-icon.active {
+    margin-right: -2rem;
   }
 
   .nav.active .icons {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
   }
 
   .nav.active .hamburguer {
@@ -402,101 +529,52 @@ footer > p {
     transform: rotate(90deg);
   }
 
-  .thinking-man {
-    margin-left: 0;
-    margin-right: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  }
-
-  .thinking-man-text {
-    margin-left: 0;
-    margin-right: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  }
-
-  .thinking-man-img {
-    margin-top: 3rem;
-    margin-right: 0;
-    margin-left: 0;
-    width: 60%;
-    height: 60%;
-  }
-
-  .iniciativa {
-    font-size: 40px;
-  }
-
-  .dev {
-    font-size: 20px;
-    width: 60%;
-  }
-
   .rectangle {
-    left: 0;
-    top: 24rem;
-  }
-
-  .rectangle > img {
-    width: 100vw;
-    height: 130px;
-    object-fit: cover;
+    top: 25rem;
   }
 
   .form {
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .form > h2 {
     font-size: 40px;
-    text-align: center;
   }
 
   .form > p {
     font-size: 20px;
-    text-align: center;
   }
 
   .inputs {
     margin-left: 0.5rem;
     width: 95vw;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    gap: 1rem;
-  }
-
-  .label-name {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-  }
-
-  .label-wpp {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
   }
 
   .btn-green {
-    margin-left: 1.5rem;
-    grid-column: 1 / 1;
-    grid-row: 3 / 3;
     font-size: 18px;
     width: 270px;
     height: 55px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pc-text {
+    margin-left: 20px;
+  }
+
+  .pc-text > p {
+    font-size: 22px;
+  }
+
+  .pc-text > h1 {
+    font-size: 40px;
+    width: 72%;
+  }
+
+  .rectangle {
+    left: 0;
+    top: 15rem;
   }
 }
 
@@ -530,24 +608,23 @@ footer > p {
     height: 50px;
   }
 
+  .thinking-man-img {
+    margin-top: 3rem;
+    margin-right: 0;
+    margin-left: 0;
+    width: 60%;
+    height: 60%;
+  }
+
   .rectangle {
     left: 0;
-    top: 16rem;
+    top: 15rem;
   }
 
   .rectangle > img {
     width: 100vw;
     height: 110px;
     object-fit: cover;
-  }
-
-  [animationMobile] {
-    opacity: 0;
-    transition: 2s ease-in-out;
-  }
-
-  [animationMobile].active {
-    opacity: 1;
   }
 }
 
@@ -586,7 +663,7 @@ footer > p {
   }
 
   .iniciativa {
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .dev {
@@ -627,5 +704,18 @@ footer > p {
 
   .btn-meeting-green {
     width: 16rem;
+  }
+}
+
+@media screen and (max-width: 280) {
+  .inputs {
+    margin-left: 0;
+    width: 50vw;
+  }
+
+  #name,
+  #whatsapp {
+    margin: 0;
+    width: 10rem;
   }
 }
