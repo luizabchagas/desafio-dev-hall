@@ -158,8 +158,11 @@ a > img {
   left: -45rem;
   top: 25rem;
   z-index: 1;
+}
+
+.rectangle > img {
   width: 150vw;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .form {
