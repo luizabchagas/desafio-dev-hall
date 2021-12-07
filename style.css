@@ -161,7 +161,7 @@ a > img {
 }
 
 .rectangle > img {
-  width: 150vw;
+  width: 200vw;
   height: 120px;
   object-fit: cover;
 }
