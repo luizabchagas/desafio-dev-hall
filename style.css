@@ -312,6 +312,47 @@ footer > p {
   transform: translate3d(0, 0, 0);
 }
 
+@media screen and (max-width: 1300px) {
+  .pc-text {
+    top: 10rem;
+  }
+
+  .pc-text > h1 {
+    font-size: calc(4.375rem + ((1vw - 8px) * 0.8929));
+    width: 65%;
+  }
+
+  .thinking-man-img {
+    margin-left: 20rem;
+  }
+
+  .thinking-man-text {
+    margin-left: 10rem;
+  }
+
+  .initiative {
+    width: 120%;
+  }
+
+  .dev {
+    width: 120%;
+  }
+
+  .rectangle {
+    top: 32rem;
+  }
+
+  .rectangle > img {
+    width: 150vw;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .form {
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   main {
     display: flex;
@@ -358,17 +399,6 @@ footer > p {
 
   .dev {
     width: 70%;
-  }
-
-  .rectangle {
-    left: 0;
-    top: 32rem;
-  }
-
-  .rectangle > img {
-    width: 100vw;
-    height: 130px;
-    object-fit: cover;
   }
 
   .form {
