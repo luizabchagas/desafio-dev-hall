@@ -150,14 +150,18 @@ a > img {
 
 .positioning {
   position: relative;
-  width: 100vw;
 }
 
 .rectangle {
   position: absolute;
-  left: -45rem;
-  top: 25rem;
   z-index: 1;
+  background-image: url(./img/rectangle-4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 25rem;
+  left: -45rem;
+  width: 100vw;
+  height: 100vh;
 }
 
 .form {
@@ -328,16 +332,6 @@ footer > p {
 
   .thinking-man-text {
     margin-left: 10rem;
-  }
-
-  .rectangle {
-    top: 32rem;
-  }
-
-  .rectangle > img {
-    width: 150vw;
-    height: 130px;
-    object-fit: cover;
   }
 
   .form {
@@ -551,10 +545,6 @@ footer > p {
     transform: rotate(90deg);
   }
 
-  .rectangle {
-    top: 25rem;
-  }
-
   .form {
     display: flex;
     flex-direction: column;
@@ -592,11 +582,6 @@ footer > p {
   .pc-text > h1 {
     font-size: 40px;
     width: 72%;
-  }
-
-  .rectangle {
-    left: 0;
-    top: 15rem;
   }
 
   .initiative {
@@ -640,17 +625,6 @@ footer > p {
     margin-left: 0;
     width: 60%;
     height: 60%;
-  }
-
-  .rectangle {
-    left: 0;
-    top: 15rem;
-  }
-
-  .rectangle > img {
-    width: 100vw;
-    height: 110px;
-    object-fit: cover;
   }
 
   .initiative {
@@ -698,16 +672,6 @@ footer > p {
 
   .dev {
     font-size: 18px;
-  }
-
-  .rectangle {
-    top: 13rem;
-  }
-
-  .rectangle > img {
-    width: 100vw;
-    height: 90px;
-    object-fit: cover;
   }
 
   .form {
