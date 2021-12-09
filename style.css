@@ -159,7 +159,7 @@ a > img {
   background-repeat: no-repeat;
   background-size: contain;
   top: 25rem;
-  left: -54rem;
+  left: -45rem;
   width: 100vw;
   height: 100vh;
 }
@@ -334,6 +334,19 @@ footer > p {
     margin-left: 10rem;
   }
 
+  .initiative {
+    width: 200%;
+  }
+
+  .dev {
+    width: 200%;
+  }
+
+  .rectangle {
+    top: 27rem;
+    left: -23rem;
+  }
+
   .form {
     margin-left: 2rem;
   }
@@ -346,7 +359,7 @@ footer > p {
   }
 
   .pc-text {
-    top: 25rem;
+    top: 15rem;
   }
 
   .pc-text > h1 {
@@ -379,12 +392,17 @@ footer > p {
     margin-top: 3rem;
     margin-right: 0;
     margin-left: 0;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
   }
 
   .dev {
     width: 70%;
+  }
+
+  .rectangle {
+    top: 21rem;
+    left: -19rem;
   }
 
   .form {
@@ -545,6 +563,11 @@ footer > p {
     transform: rotate(90deg);
   }
 
+  .rectangle {
+    top: 23rem;
+    left: -11rem;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -585,7 +608,13 @@ footer > p {
   }
 
   .initiative {
-    font-size: 20px;
+    font-size: 35px;
+  }
+
+  .rectangle {
+    top: 20rem;
+    left: -4rem;
+    background-size: calc(100% + 150%);
   }
 }
 
@@ -627,8 +656,19 @@ footer > p {
     height: 60%;
   }
 
-  .initiative {
-    font-size: 20px;
+  .rectangle {
+    top: 15rem;
+    left: 0;
+  }
+
+  .inputs {
+    width: 90vw;
+  }
+
+  #name,
+  #whatsapp {
+    margin: 0;
+    width: 18rem;
   }
 }
 
@@ -684,16 +724,6 @@ footer > p {
 
   .form > p {
     font-size: 18px;
-  }
-
-  .inputs {
-    width: 90vw;
-  }
-
-  #name,
-  #whatsapp {
-    margin: 0;
-    width: 18rem;
   }
 
   .btn-meeting-green {
