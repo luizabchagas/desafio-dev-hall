@@ -161,7 +161,7 @@ a > img {
   top: 25rem;
   left: -45rem;
   width: 100vw;
-  height: 100vh;
+  height: 120px;
 }
 
 .form {
@@ -463,7 +463,12 @@ footer > p {
     transform: translate3d(0, 0, 0);
   }
 
-  [animation].on {
+  [animationMobile] {
+    opacity: 0;
+    transition: 2s ease-in-out;
+  }
+
+  [animationMobile].active {
     opacity: 1;
   }
 }

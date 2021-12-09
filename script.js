@@ -42,7 +42,7 @@ window.addEventListener("scroll", function () {
   const animated = document.querySelectorAll("[animation]")
   const windowTop = window.pageYOffset + 500
   animated.forEach(function (element) {
-    if (windowTop > element.offsetTop) {
+    if (windowTop > element.offsetTop && window.innerWidth > 1024) {
       element.classList.add("on")
     }
   })
@@ -60,6 +60,15 @@ window.addEventListener("load", function () {
     }
   })
 })*/
+
+window.addEventListener("load", function () {
+  const animated = document.querySelectorAll("[animationMobile]")
+  animated.forEach(function (element) {
+    if (window.innerWidth < 1024) {
+      element.classList.add("active")
+    }
+  })
+})
 
 /* VALIDAÇÃO DO CAMPO NOME */
 
