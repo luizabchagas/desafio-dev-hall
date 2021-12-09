@@ -157,9 +157,9 @@ a > img {
   z-index: 1;
   background-image: url(./img/rectangle-4.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   top: 25rem;
-  left: -55rem;
+  left: -54rem;
   width: 100vw;
   height: 120px;
 }
