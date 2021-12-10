@@ -41,8 +41,9 @@ window.addEventListener("load", function () {
 window.addEventListener("scroll", function () {
   const animated = document.querySelectorAll("[animation]")
   const windowTop = window.pageYOffset + 500
+  const windowWidth = window.innerWidth
   animated.forEach(function (element) {
-    if (windowTop > element.offsetTop && window.innerWidth > 1024) {
+    if (windowWidth > 1024 && windowTop > element.offsetTop) {
       element.classList.add("on")
     }
   })
@@ -55,6 +56,7 @@ window.addEventListener("load", function () {
   animated.forEach(function (element) {
     if (window.innerWidth < 1024) {
       element.classList.add("active")
+      element.removeAttribute("animation")
     }
   })
 })

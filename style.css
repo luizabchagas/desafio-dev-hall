@@ -157,9 +157,9 @@ a > img {
   z-index: 1;
   background-image: url(./img/rectangle-4.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   top: 25rem;
-  left: -54rem;
+  left: -45rem;
   width: 100vw;
   height: 120px;
 }
@@ -618,7 +618,7 @@ footer > p {
 
   .rectangle {
     top: 20rem;
-    left: -4rem;
+    left: 0;
     background-size: calc(100% + 150%);
   }
 }
