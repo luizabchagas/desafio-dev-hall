@@ -55,8 +55,8 @@ window.addEventListener("load", function () {
   const animated = document.querySelectorAll("[animationMobile]")
   animated.forEach(function (element) {
     if (window.innerWidth < 1024) {
-      element.classList.add("active")
       element.removeAttribute("animation")
+      element.classList.add("active")
     }
   })
 })
